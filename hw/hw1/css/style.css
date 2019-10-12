@@ -1,0 +1,124 @@
+/*CSS RESET*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;; 
+    background-color: #fff;
+	font-weight: 400; 
+}
+
+header {
+    
+	background-color: #3a5581;
+    padding: 20px;         
+}
+
+header h1 {
+    font-size: 72px; 
+    font-family: 'Squada One', regular;
+	font-weight: ;
+    color: #fff;
+	 
+	
+    
+}
+header h2 {
+    font-family: 'Squada One', regular;
+    font-weight:100;
+	font-style:oblique;
+    color: #858c9d;
+    text-transform: capitalize;
+    
+}
+h1 {
+    font-size: 48px;
+}
+
+nav {
+    background-color: #6a86ae;
+	text-transform: capitalize;
+    font-family:'Open Sans', sans-serif;        
+}
+
+nav a:link {
+    padding: 20px;
+    display: inline-block;
+    color: #18356d; 
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #dbb554
+}
+
+nav a:hover {
+    background-color: #3a5581;
+    color: #fff;
+}
+
+nav a:active {
+    background-color: #CECFC7;
+	color: palevioletred; 
+	font-weight: bold; 
+}
+
+article {
+    padding: 20px;
+}
+
+article h1 {
+    font-size: 38px;
+    font-family: 'Squada One', regular; 
+    font-style: ;
+	font-weight: 400;
+    color: #dbb554;
+    text-transform: capitalize;
+	margin: 10px;
+} 
+
+article img {
+       /*responsive image*/
+    width:100%;
+    margin-bottom: 20px;
+}
+
+article p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 24px;
+
+}
+
+footer {
+    background-color: #6a86ae;
+    color: #dbb554;
+    padding: 20px;
+	font-family: 'Squada One', regular
+   
+}
+
+footer2 {
+	background-color: #6a86ae;
+	color: #dbb554;
+    padding: 10px;
+	font-family: 'Squada One', regular
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

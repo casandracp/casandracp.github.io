@@ -1,0 +1,86 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+section {
+    width:100%;
+    height: 100vh;
+/*    border:solid 1px red;*/
+    position:relative;
+}
+
+#s1 {
+    background: url("../images/random.png") no-repeat fixed center center;
+    background-size: cover;
+}
+
+#s1 article {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+    width:30%;
+    background:#fff;
+    padding: 20px;
+    position:absolute;
+    bottom:40px;
+    left:40px;
+	background-color: #153D5E
+}
+
+#s2 {
+    background-color: #153D5E;
+    background-size: cover;
+	height: 50vh;
+} 
+
+#s2 header {
+	padding: 20px;
+	font-family: 'Squada One', regular;
+	color: #FFFFFF;
+	font-size: 40px;
+ 
+}
+
+#s2 article {
+	font-family: 'Open Sans', sans-serif;
+    width:30%;
+	color: #fff;
+    background:#;
+    padding: 20px;
+    position:absolute;
+    top:20px;
+    right:40px;
+}
+
+#s3 {
+    background: url(../images/random_2.png) no-repeat fixed center center;
+    background-size: cover;
+	
+}
+
+#s3 article {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+    width:30%;
+    background:#1E687C;
+    padding: 20px;
+    position:absolute;
+    bottom:40px;
+    right:40px;
+}
+
+footer {
+	background-color: #1E687C;
+	height: 10vh;
+	
+	
+}
+footer article {
+	font-family: 'Squada One', regular;
+	padding: 20px;
+	position:absolute;
+	color: #FFFFFF;
+}
+
+
