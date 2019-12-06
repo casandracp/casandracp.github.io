@@ -1,42 +1,349 @@
-@charset "UTF-8";
-/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Caveat|Fredericka+the+Great|Open+Sans+Condensed:300&display=swap');;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+          box-sizing: border-box;
+}
 
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+nav {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background: #1e2223;
+	display: flex;
+	font-family: 'Fredericka the Great', cursive;;
+	/*justify-content: center;*/
+	/*border-bottom: solid 4px #B8C064;*/
+  align-content: space-around ; 
+  border-bottom: white solid;  
+  padding: 0 20px 0 0;
+  text-align: ;
+}
+
+
+nav a:link {
+	padding: 10px;
+	color: #EEC25D;
+	text-decoration: none;
+	flex-grow: 1;
+	text-align: center;
+}
+nav a:visited{
+	color: white;
+}
+nav a:active {
+	color: white;
+}
+
+nav a:hover {
+  color: white;
+}
+
 
 body {
-  background-color: #FFCB8F;
-  min-height: 70vh;
-  padding: 40vh 30vw;
-  color: hsl(198, 1%, 29%);
-  font-family:'Permanent Marker', cursive;
-  text-align: left;
-  font-size: 130%;  
+  display: -ms-grid;
+  display: grid;
+	top: 40px; 
+  -ms-grid-rows: 70px auto;
+      grid-template-rows: 70px auto;
+  height: 100%;
+  overflow: hidden;
+	position: inherit; 
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
 }
 
-h2 {
-  line-height: 1.5;
-  display: inline;
-  background-image: linear-gradient(
-        transparent 50%,
-        #F0A57D 50%,
-        #FF846A 85%,
-        transparent 85%,
-        transparent 100%
-    );
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    animation: animatedBackground 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s forwards;
+body#index {
+  background-color: #9b76;
 }
 
-@keyframes animatedBackground {
-    to {
-        background-size: 100% 100%;
-    }
+body#index section.parent {
+  top: 80vh; 
+  height: 100%;
+  width: 90%;
 }
 
-h2 a:hover{
-	text-shadow: 20px; 
+body#index section.parent .main-content-wrapper img.background-image {
+  position: absolute; 
+  z-index: -1;
+  bottom: ;
+  left: 0;
+  height: calc(150% - 70px);
+  -webkit-filter: opacity(0.6);
+          filter: opacity(0.6);
 }
-  
+
+
+body#index section.parent .main-content-wrapper .index-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+  opacity: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+body#index section.parent .main-content-wrapper .index-text h1 {
+  color: #ff8b32;
+  line-height: 1.2;
+  top: 100px; 
+  font-family: 'Shadows Into Light';
+  font-size: 70px;
+  font-family:'Fredericka the Great', cursive;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body#index section.parent .main-content-wrapper .index-text p {
+  line-height: 1.4;
+  font-family: 'caveat';
+  font-size: 20px;
+  color: #1e2223;
+  text-align: justify;
+  font-weight: 500;
+  padding: 40px; 
+  padding-left: 100px; 
+	position: ;
+	top: 200px;
+	left: 200px;
+}
+
+/*PAGE 2 Quizz ------------------------------------------------*/
+
+body#quizz{
+	margin: 60px 0 0;
+	height: 100%;
+	height: 100vh;
+   overflow-y: auto;
+   overflow-x: hidden;
+	background-color: #1e2223;
+	
+}
+
+body#quizz h1{
+	position: relative;
+	color: #343C3D;
+	text-align: center;
+	font-family: 'Caveat';
+	font-size: 64px;
+}
+
+body#quizz p{
+	align-content:;
+	text-align: center;
+	position: relative;
+	font-size: 42px;
+	font-family: 'Caveat';
+	display: grid;
+	grid-template-columns: repeat(o, 2fr)
+}
+
+.container {
+  position: relative;
+ align-content: center;
+  width: 50%;
+  padding: 20px;
+   display: grid;
+   grid-gap: 20px;
+/*grid-template-columns: repeat(5, 1fr); */
+   /* grid-template-columns: repeat(5, minmax(250px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+	
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #9b76;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'Caveat';
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+figure {border: solid 1px yellow;}
+img {
+    display: block;
+    width: 100%;
+}
+
+
+
+/*PAGE 3 FACTS ------------------------------------------------*/
+
+body #facts {
+	height: 100%;
+	background-color: antiquewhite;
+	
+}
+
+
+body#facts #fact1 {
+	
+height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+ 
+}
+
+.multi {
+	padding: 40px;
+	min-height: 30vh;
+	height: auto;
+}
+
+#fact1 .multi article {
+	
+	background: ;
+	padding: 20px;
+	margin-bottom: 20px; 
+	width: 100%;
+
+}
+	
+#fact1 .multi h1{
+  font-size: 45px;
+  text-align: center;
+  line-height: 1.2;
+  font-family: 'Fredericka the Great', cursive;
+	color: #FF7811 ;
+}
+
+#fact1 .multi p{
+	font-size: 14px;
+	margin: 10px 0 0 ;
+	padding: 0 0 15px;
+	text-align: center;
+	font-family: 'caveat';
+	color: ;
+	
+}
+
+#fact1 .multi img{ 
+	width: 100%;
+	min-height:100vh;
+	height: auto;
+	border: solid 20px #fff;
+	background: url("../images/sausage.png") no-repeat fixed center center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+#fact2 {
+	position: relative; 
+	text-align: center; 
+}
+
+
+#fact2  article {
+  position: relative;
+  text-align: justify;
+  padding: 10px;
+  color: #000;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  background-color: );
+}
+
+/*	width: 100%;
+	min-height:100vh;
+	height: auto;
+	border: solid 20px #fff;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;*/
+
+}
+#fact2 h1{
+	color: #000;
+	
+}
+#fact2 p {
+	align-content: center;
+	text-align: center;
+		
+}
+
+
+
+#fact3 .multi article {
+	position: relative;
+	background: #fff;
+	padding: 20px;
+	top: 70vh; 
+	margin-bottom: 20px; 
+	width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
